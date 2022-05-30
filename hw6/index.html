@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+</head>
+<body>
+<button class="js--button">Кнопка</button>
+<p class="js--p">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+<script>
+    const button1 = document.querySelector('.js--button');
+    const p1 = document.querySelector('.js--p');
+    button1.addEventListener('click', function () {
+        p1.style.color = 'red';
+    })
+    button1.removeEventListener('click', function () {
+        p1.style.color = 'red';
+    })
+</script>
+</body>
+</html>
