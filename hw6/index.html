@@ -13,13 +13,12 @@
 <p class="js--p">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 <script>
     const button1 = document.querySelector('.js--button');
-    const p1 = document.querySelector('.js--p');
-    button1.addEventListener('click', function () {
+    function changeColor () {
+        const p1 = document.querySelector('.js--p');
         p1.style.color = 'red';
-    })
-    button1.removeEventListener('click', function () {
-        p1.style.color = 'red';
-    })
+    }
+    button1.addEventListener('click', changeColor);
+    button1.removeEventListener('click', changeColor);
 </script>
 </body>
 </html>
